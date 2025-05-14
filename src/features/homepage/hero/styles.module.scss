@@ -1,0 +1,415 @@
+
+@import "../../../styles/index.scss";
+
+
+.wrapper {
+  width: 100%;
+  
+  position: relative;
+
+  .hero_wrapper {
+    display: flex;
+
+    .container {
+      width: 50%;
+      height: 100vh;
+    }
+
+    .background {
+      background-image: url("../../../../public/assets/images/checkup.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 100vh;
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 16px;
+        // align-items: center;
+        background: linear-gradient(
+          271.34deg,
+          rgba(16, 17, 23, 0.4466) 1.14%,
+          rgba(16, 17, 23, 0.77) 99.07%
+        );
+      }
+    }
+  }
+
+  .hero_box {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    max-width: 1440px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    // background: #F4F0EC;
+    .hero_text {
+      width: 90%;
+      margin: 0 auto;
+      background: #f4f0ec;
+
+      p {
+        span {
+          font-size: 16px;
+          color: #1c7578;
+          font-family: Work;
+          font-weight: bold;
+          letter-spacing: 1.5px;
+          text-transform: capitalize;
+        }
+        font-size: 16px;
+        color: #3d3d3d;
+        font-family: Work;
+        font-weight: normal;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: 56px;
+        font-family: WorkSemi;
+        color: #313131;
+        margin-bottom: 16px;
+      }
+
+      .hero_btn{
+        margin-top: 40px;
+        display: flex;
+        gap: 10px;
+
+        .btn_one{
+            padding: 15px 30px;
+            border-radius: 40px;
+            background-color: #1c7578;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: Work;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            &:hover{
+                background-color: #145153;
+                color: #fff;
+            }
+        }
+
+        .btn_two{
+            padding: 15px 30px;
+            border-radius: 40px;
+            background-color: #fff;
+            border: 2px solid #1c7578;
+            color: #1c7578;
+            cursor: pointer;
+            font-family: Work;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            &:hover{
+                background-color: #1c7578;
+                color: #fff;
+            }
+        }
+      }
+    }
+  }
+
+  .location_container{
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .location_box{
+        display: flex;
+        margin: 0 auto;
+        gap: 20px;
+        width: 90%;
+    
+        .location_location{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            min-height: 120px;
+            border-radius: 20px;
+            padding: 5px 15px;
+            min-width: 390px;
+            background-color: #fff;
+            box-shadow: 0px 2px 6.1px 2px #0000000D;
+    
+            .locate_img{
+                width: 50px;
+                height: 50px;
+            }
+    
+    
+            .location_text{
+    
+                h3{
+                    font-size: 24px;
+                    color: #1c7578;
+                    font-family: WorkBold;
+                    font-weight: normal;
+                    // margin-bottom: 16px;
+                }
+    
+                p{
+                    font-size: 16px;
+                    color: #3d3d3d;
+                    font-family: Work;
+                    font-weight: normal;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+      }
+  }
+  .location_container_two{
+    display: none;
+  }
+}
+
+@include responsive("mobile"){
+
+    .wrapper {
+        position: relative;
+      
+        .hero_wrapper {
+          display: flex;
+      
+          .container {
+            width: 50%;
+            height: 500px;
+          }
+      
+          .background {
+            background-image: url("../../../../public/assets/images/checkup.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50%;
+            height: 500px;
+            position: relative;
+            display: none;
+      
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              border-radius: 16px;
+              // align-items: center;
+              background: linear-gradient(
+                271.34deg,
+                rgba(16, 17, 23, 0.4466) 1.14%,
+                rgba(16, 17, 23, 0.77) 99.07%
+              );
+            }
+          }
+        }
+      
+        .hero_box {
+          position: absolute;
+          top: 35%;
+          width: 100%;
+          
+          // background: #F4F0EC;
+          .hero_text {
+            width: 90%;
+            margin: 0 auto;
+            background: #f4f0ec;
+      
+            p {
+              span {
+                font-size: 16px;
+                color: #1c7578;
+                font-family: Work;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                text-transform: capitalize;
+              }
+              font-size: 16px;
+              color: #3d3d3d;
+              font-family: Work;
+              font-weight: normal;
+              margin-bottom: 16px;
+              text-align: center;
+              line-height: 25px;
+            }
+      
+            h1 {
+              font-size: 38px;
+              font-family: WorkSemi;
+              color: #313131;
+              margin-bottom: 16px;
+              text-align: center;
+            }
+      
+            .hero_btn{
+              margin-top: 40px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+      
+              .btn_one{
+                  padding: 15px 30px;
+                  border-radius: 40px;
+                  background-color: #1c7578;
+                  color: #fff;
+                  border: none;
+                  cursor: pointer;
+                  font-family: Work;
+                  font-size: 16px;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+      
+                  &:hover{
+                      background-color: #145153;
+                      color: #fff;
+                  }
+              }
+      
+              .btn_two{
+                  padding: 15px 30px;
+                  border-radius: 40px;
+                  background-color: #fff;
+                  border: 2px solid #1c7578;
+                  color: #1c7578;
+                  cursor: pointer;
+                  font-family: Work;
+                  font-size: 16px;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+      
+                  &:hover{
+                      background-color: #1c7578;
+                      color: #fff;
+                  }
+              }
+            }
+          }
+        }
+      
+        .location_container{
+        //   position: absolute;
+        display: none;
+          position: initial;
+          bottom: 0px;
+          .location_box{
+              display: flex;
+              flex-direction: column;
+              margin: 0 auto;
+              gap: 20px;
+              width: 90%;
+          
+              .location_location{
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+                  min-height: 120px;
+                  border-radius: 20px;
+                  padding: 5px 15px;
+                  max-width: 450px;
+                  background-color: #fff;
+                  box-shadow: 0px 2px 6.1px 2px #0000000D;
+          
+                  .locate_img{
+                      width: 50px;
+                      height: 50px;
+                  }
+          
+          
+                  .location_text{
+          
+                      h3{
+                          font-size: 24px;
+                          color: #1c7578;
+                          font-family: WorkBold;
+                          font-weight: normal;
+                          // margin-bottom: 16px;
+                      }
+          
+                      p{
+                          font-size: 16px;
+                          color: #3d3d3d;
+                          font-family: Work;
+                          font-weight: normal;
+                          margin-bottom: 5px;
+                      }
+                  }
+              }
+            }
+        }
+
+        .location_container_two{
+            //   position: absolute;
+            //   bottom: 0px;
+            margin-top: 170px;
+            display: block;
+            // margin-top: ;
+              .location_box{
+                  display: flex;
+                  flex-direction: column;
+                  margin: 0 auto;
+                  gap: 20px;
+                  width: 90%;
+              
+                  .location_location{
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      gap: 15px;
+                      min-height: 120px;
+                      border-radius: 20px;
+                      padding: 8px 15px;
+                      max-width: 450px;
+                      background-color: #fff;
+                      box-shadow: 0px 2px 6.1px 2px #0000000D;
+              
+                      .locate_img{
+                          width: 50px;
+                          height: 50px;
+                      }
+              
+              
+                      .location_text{
+              
+                          h3{
+                              font-size: 24px;
+                              color: #1c7578;
+                              font-family: WorkBold;
+                              font-weight: normal;
+                              margin-bottom: 5px;
+                          }
+              
+                          p{
+                              font-size: 16px;
+                              color: #3d3d3d;
+                              font-family: Work;
+                              font-weight: normal;
+                              margin-bottom: 5px;
+                          }
+                      }
+                  }
+                }
+            }
+      }
+}
+

@@ -1,0 +1,183 @@
+@import "../../../styles/index.scss";
+
+.wrapper{
+    width: 70%;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+
+    .container{
+        
+
+        .container_image{
+            position: relative;
+            width: 100%;
+
+            .emergency{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 30px 0px 0px 30px;
+            }
+
+            .why_choose{
+                position: absolute;
+                top: 15%;
+                left: -30%;
+                background-color: #fff;
+                padding: 30px;
+                width: 55%;
+                max-width: 500px;
+                border-radius: 30px;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+
+                h2{
+                    font-size: 38px;
+                    font-family: WorkSemi;
+                    color: #313131;
+                    margin-bottom: 16px;
+                }
+
+                p{
+                    font-size: 15px;
+                    color: #3d3d3d;
+                    font-family: Work;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                    line-height: 25px;
+                }
+
+                .check{
+                    margin-left: 20px;
+
+                    p{
+                        font-size: 18px;
+                        color: #3d3d3d;
+                        font-family: Work;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        line-height: 22px;
+                    }
+                    
+                }
+
+                .btn{
+                    margin-top: 15px;
+
+                    button{
+                        padding: 15px 25px;
+                        border-radius: 40px;
+                        background-color: #1c7578;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                        font-family: Work;
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+            
+                        &:hover{
+                            background-color: #145153;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("mobile"){
+    .wrapper{
+        width: 100%;
+        position: absolute;
+        bottom: -7%;
+        right: 0;
+    
+        .container{
+            
+    
+            .container_image{
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .emergency{
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 0px 0px 0px 0px;
+                }
+    
+                .why_choose{
+                    position: absolute;
+                    top: 65%;
+                    left: 0%;
+                    // right: 10%;
+                    background-color: #fff;
+                    padding: 30px 20px;
+                    width: 90%;
+                    margin: 0 auto;
+                    max-width: 500px;
+                    border-radius: 30px;
+                    // left: 50%;
+                    // transform: translate(-50%, -50%);
+    
+                    h2{
+                        font-size: 28px;
+                        font-family: WorkSemi;
+                        color: #313131;
+                        margin-bottom: 16px;
+                        text-align: center;
+                    }
+    
+                    p{
+                        font-size: 15px;
+                        color: #3d3d3d;
+                        font-family: Work;
+                        font-weight: normal;
+                        margin-bottom: 20px;
+                        line-height: 25px;
+                    }
+    
+                    .check{
+                        margin-left: 20px;
+    
+                        p{
+                            font-size: 16px;
+                            color: #3d3d3d;
+                            font-family: Work;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            line-height: 22px;
+                        }
+                        
+                    }
+    
+                    .btn{
+                        margin-top: 15px;
+    
+                        button{
+                            padding: 15px 25px;
+                            border-radius: 40px;
+                            background-color: #1c7578;
+                            color: #fff;
+                            border: none;
+                            cursor: pointer;
+                            font-family: Work;
+                            font-size: 16px;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                
+                            &:hover{
+                                background-color: #145153;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

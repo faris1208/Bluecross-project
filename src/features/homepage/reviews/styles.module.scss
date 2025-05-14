@@ -1,0 +1,247 @@
+@import "../../../styles/index.scss";
+
+.wrapper {
+  margin-top: 240px;
+  width: 100%;
+  padding: 100px 0px;
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+
+    .review {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+
+      .review_box {
+        width: 50%;
+        padding: 0px 30px 0px 0px;
+
+        p {
+          span {
+            font-size: 16px;
+            color: #1c7578;
+            font-family: Work;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+          }
+          font-size: 16px;
+          color: #3d3d3d;
+          font-family: Work;
+          font-weight: normal;
+          margin-bottom: 20px;
+          line-height: 25px;
+        }
+
+        h2 {
+          font-size: 38px;
+          font-family: WorkSemi;
+          color: #313131;
+          margin-bottom: 20px;
+        }
+      }
+
+      .second {
+        display: flex;
+        width: 50%;
+        gap: 20px;
+
+        .second_service {
+          max-width: 300px;
+          padding: 30px 20px;
+          background-color: #fff;
+          border-radius: 16px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          p {
+            font-size: 16px;
+            color: #3d3d3d;
+            font-family: Work;
+            font-weight: normal;
+            line-height: 25px;
+            margin-top: 10px;
+          }
+
+          h4 {
+            font-size: 20px;
+            color: #313131;
+            font-family: Work;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .review_two {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20px;
+
+      .second {
+        display: flex;
+        width: 100%;
+        gap: 23px;
+
+        .second_service {
+          max-width: 300px;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 16px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          p {
+            font-size: 16px;
+            color: #3d3d3d;
+            font-family: Work;
+            font-weight: normal;
+            line-height: 25px;
+            margin-top: 10px;
+          }
+
+          h4 {
+            font-size: 20px;
+            color: #313131;
+            font-family: Work;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("mobile"){
+    .wrapper {
+        margin-top: 700px;
+        width: 100%;
+        padding: 100px 0px 80px;
+      
+        .container {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 1440px;
+      
+          .review {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+      
+            .review_box {
+              width: 100%;
+              padding: 0px 30px 0px 0px;
+      
+              p {
+                span {
+                  font-size: 16px;
+                  color: #1c7578;
+                  font-family: Work;
+                  font-weight: bold;
+                  letter-spacing: 1.5px;
+                  text-transform: capitalize;
+                }
+                font-size: 16px;
+                color: #3d3d3d;
+                font-family: Work;
+                font-weight: normal;
+                margin-bottom: 16px;
+                line-height: 25px;
+                text-align: center;
+              }
+      
+              h2 {
+                font-size: 28px;
+                font-family: WorkSemi;
+                color: #313131;
+                text-align: center;
+                line-height: 35px;
+                margin-bottom: 20px;
+              }
+            }
+      
+            .second {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              gap: 20px;
+      
+              .second_service {
+                max-width: 470px;
+                padding: 30px 20px;
+                background-color: #fff;
+                border-radius: 16px;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+      
+                p {
+                  font-size: 16px;
+                  color: #3d3d3d;
+                  font-family: Work;
+                  font-weight: normal;
+                  line-height: 25px;
+                  margin-top: 10px;
+                }
+      
+                h4 {
+                  font-size: 20px;
+                  color: #313131;
+                  font-family: Work;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+      
+          .review_two {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+      
+            .second {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              gap: 23px;
+      
+              .second_service {
+                max-width: 470px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 16px;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+      
+                p {
+                  font-size: 16px;
+                  color: #3d3d3d;
+                  font-family: Work;
+                  font-weight: normal;
+                  line-height: 25px;
+                  margin-top: 10px;
+                }
+      
+                h4 {
+                  font-size: 20px;
+                  color: #313131;
+                  font-family: Work;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+}

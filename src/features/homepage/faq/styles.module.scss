@@ -1,0 +1,218 @@
+@import "../../../styles/index.scss";
+
+.wrapper{
+    background-color: #F4F0EC;
+    padding: 100px 0px;
+
+    .wrapper_wrapper{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+
+
+            .review_box {
+                width: 50%;
+                // padding: 0px 30px 0px 0px;
+        
+                p {
+                  span {
+                    font-size: 16px;
+                    color: #1c7578;
+                    font-family: Work;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
+                    text-transform: capitalize;
+                  }
+                  font-size: 16px;
+                  color: #3d3d3d;
+                  font-family: Work;
+                  font-weight: normal;
+                  margin-bottom: 20px;
+                  line-height: 25px;
+                }
+        
+                h2 {
+                  font-size: 38px;
+                  font-family: WorkSemi;
+                  color: #313131;
+                  line-height: 45px;
+                  margin-bottom: 20px;
+                  width: 70%;
+                }
+              }
+        }
+    }
+}
+
+.accordion {
+    width: 50%;
+    // max-width: 600px;
+    // margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .accordion_item {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .accordion_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    line-height: 158%;
+    letter-spacing: 0%;
+    color: #191919;
+
+    span{
+        font-family: WorkSemi;
+        font-weight: bold;
+        font-size: 20px;
+    }
+  }
+  
+  .accordion_header:hover {
+    background: #f5f5f5;
+  }
+  
+  .accordion_content {
+    padding: 12px 16px;
+    // color: #666;
+    border-top: 1px solid #e0e0e0;
+
+    font-family: Work;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 158%;
+    letter-spacing: 0%;
+    color: #000;
+  }
+
+  @include responsive("mobile"){
+
+    @import "../../../styles/index.scss";
+
+.wrapper{
+    background-color: #F4F0EC;
+    padding: 70px 0px;
+
+    .wrapper_wrapper{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+            .review_box {
+                width: 100%;
+                // padding: 0px 30px 0px 0px;
+        
+                p {
+                  span {
+                    font-size: 16px;
+                    color: #1c7578;
+                    font-family: Work;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
+                    
+                    text-transform: capitalize;
+                  }
+                  font-size: 16px;
+                  color: #3d3d3d;
+                  font-family: Work;
+                  font-weight: normal;
+                  margin-bottom: 20px;
+                  line-height: 25px;
+                  text-align: center;
+                }
+        
+                h2 {
+                  font-size: 28px;
+                  font-family: WorkSemi;
+                  color: #313131;
+                  line-height: 35px;
+                  margin-bottom: 20px;
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+        }
+    }
+}
+
+.accordion {
+    width: 100%;
+    // max-width: 600px;
+    // margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .accordion_item {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .accordion_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    line-height: 158%;
+    letter-spacing: 0%;
+    color: #191919;
+
+    span{
+        font-family: WorkSemi;
+        font-weight: bold;
+        font-size: 16px;
+    }
+  }
+  
+  .accordion_header:hover {
+    background: #f5f5f5;
+  }
+  
+  .accordion_content {
+    padding: 12px 16px;
+    // color: #666;
+    border-top: 1px solid #e0e0e0;
+
+    font-family: Work;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 158%;
+    letter-spacing: 0%;
+    color: #000;
+  }
+  }
