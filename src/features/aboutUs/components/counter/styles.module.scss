@@ -1,0 +1,143 @@
+@import "../../../../styles/index.scss";
+
+.wrapper{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .container{
+        width: 90%;
+    margin: 0 auto;
+    }
+}
+
+.statsContainer {
+    width: 100%;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 0rem 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .statItem {
+    text-align: center;
+    min-width: 270px;
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    background-color: #fff;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .statValue {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    p{
+        font-size: 58px;
+        font-family: WorkBold;
+        color: #1c7578;
+        line-height: 35px;
+        text-align: center;
+    }
+  }
+  
+  .statLabel {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    p{
+        font-size: 16px;
+        font-family: WorkSemi;
+        color: #313131;
+        line-height: 35px;
+        text-align: center;
+    }
+  }
+
+  @include responsive("mobile"){
+    .wrapper{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    
+        .container{
+            width: 90%;
+        margin: 0 auto;
+        }
+    }
+    
+    .statsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem 0;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        margin: 2rem 0;
+      }
+      
+      .statItem {
+        text-align: center;
+        min-width: 270px;
+        padding: 2rem 1rem;
+        transition: all 0.3s ease;
+        border-radius: 30px;
+        background-color: #fff;
+      
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+      
+      .statValue {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    
+        p{
+            font-size: 38px;
+            font-family: WorkBold;
+            color: #1c7578;
+            line-height: 35px;
+            text-align: center;
+        }
+      }
+      
+      .statLabel {
+        font-size: 0.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    
+        p{
+            font-size: 15px;
+            font-family: WorkSemi;
+            color: #313131;
+            line-height: 35px;
+            text-align: center;
+        }
+      }
+  }
+  
+//   @media (max-width: 768px) {
+//     .statsContainer {
+//       flex-direction: column;
+//       align-items: center;
+//     }
+    
+//     .statItem {
+//       min-width: 150px;
+//     }
+//   }

@@ -106,6 +106,11 @@
           font-weight: normal;
           cursor: pointer;
 
+          .footer_link{
+            text-decoration: none;
+            color: #fff;
+          }
+
           &:hover{
             color: #ffffffb3;
           }
@@ -239,6 +244,12 @@
                 font-family: Work;
                 font-weight: normal;
                 cursor: pointer;
+
+                .footer_link{
+                  text-decoration: none;
+                  color: #fff;
+                  
+                }
       
                 &:hover{
                   color: #ffffffb3;

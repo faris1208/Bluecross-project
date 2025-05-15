@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../footer/styles.module.scss";
 import woman from "../../../../public/assets/images/diagnostics.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -37,10 +38,18 @@ export default function Footer() {
       <div className={styles.last_footer}>
         <div className={styles.footer}>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li>
+                  <Link className={styles.footer_link} href={"/"}>Home</Link>
+                </li>
+                <li>
+                <Link className={styles.footer_link} href={"/about-us"}>About Us</Link>
+                </li>
+                <li>
+                <Link className={styles.footer_link} href={"/services"}>Services</Link>
+                </li>
+                <li>
+                <Link className={styles.footer_link} href={"/contact"}>Contact</Link>
+                </li>
             </ul>
             <p>Copyright 2025</p>
         </div>
