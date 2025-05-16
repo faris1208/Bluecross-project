@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../services-hero/styles.module.scss";
 import Image from "next/image";
-import background from "../../../../../public/assets/images/gynecologist.jpg";
+import background from "../../../../../public/assets/images/birth.jpg";
 
 export default function ServicesHero() {
   return (

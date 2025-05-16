@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../services/styles.module.scss";
 import { sales } from "@/app/components/data";
-import Image from "next/image";
 import WhyChooseUs from "../whychooseus";
 import Link from "next/link";
 
@@ -25,13 +24,7 @@ export default function HomepageServices() {
             {sales.map((sale, index) => (
               <div className={styles.second_service} key={index}>
                 <div className={styles.service_box}>
-                  <Image
-                    src={sale.image}
-                    alt="img"
-                    width={25}
-                    height={25}
-                    className={styles.camera}
-                  />
+                {sale.image}
                 </div>
                 <div className={styles.service_text}>
                   <h2>{sale.name}</h2>

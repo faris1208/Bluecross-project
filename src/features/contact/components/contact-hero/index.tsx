@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../contact-hero/styles.module.scss";
 import Image from "next/image";
-import background from "../../../../../public/assets/images/surgery.jpg";
+import background from "../../../../../public/assets/images/new_woman.jpeg";
 
 export default function ContactHero() {
   return (

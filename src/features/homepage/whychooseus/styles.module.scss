@@ -50,14 +50,29 @@
                 .check{
                     margin-left: 20px;
 
-                    p{
-                        font-size: 18px;
-                        color: #3d3d3d;
-                        font-family: Work;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                        line-height: 22px;
+                    .check_text{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        margin-bottom: 12px;
+                        
+
+                        .check_icon{
+                            width: 19px ;
+                            height: 19px;
+                        }
+
+                        p{
+                            font-size: 18px;
+                            color: #3d3d3d;
+                            font-family: Work;
+                            font-weight: bold;
+                            margin-bottom: 0px;
+                            // line-height: 22px;
+                        }
                     }
+
+                    
                     
                 }
 

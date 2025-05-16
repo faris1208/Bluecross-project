@@ -5,6 +5,7 @@
     background-color: #F4F0EC;
     padding: 100px 0px 100px;
     position: relative;
+    
 
     .wrapper_wrapper{
         width: 100%;
@@ -69,6 +70,8 @@
                         justify-content: center;
                         align-items: center;
                         margin-bottom: 30px;
+                        color: #1C7578;
+                            fill: #1C7578;
                     }
 
                     .service_text{
@@ -115,8 +118,9 @@
 
 @include responsive("mobile"){
     .wrapper{
-        background-color: #1C7578;
-        padding: 50px 0px 100px;
+        background-color: #F9F9F9;
+        padding: 20px 0px 100px;
+        margin-top: 320px;
     
         .wrapper_wrapper{
             width: 100%;
@@ -133,7 +137,7 @@
                     p {
                         span {
                           font-size: 16px;
-                          color: #fff;
+                          color: #1C7578;
                           font-family: Work;
                           font-weight: bold;
                           letter-spacing: 1.5px;
@@ -151,7 +155,7 @@
                       h2 {
                         font-size: 28px;
                         font-family: WorkSemi;
-                        color: #fff;
+                        color: #313131;
                         margin-bottom: 20px;
                         text-align: center;
                         line-height: 32px;
@@ -184,6 +188,8 @@
                             justify-content: center;
                             align-items: center;
                             margin-bottom: 30px;
+                            color: #1C7578;
+                            fill: #1C7578;
                         }
     
                         .service_text{

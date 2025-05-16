@@ -3,6 +3,7 @@ import styles from "../whychooseus/styles.module.scss";
 import emergency from "../../../../public/assets/images/emergency.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { CheckIcon } from "@/app/components/icon.tsx";
 
 export default function WhyChooseUs() {
   return (
@@ -25,15 +26,19 @@ export default function WhyChooseUs() {
             </p>
             <div className={styles.check}>
                 <div className={styles.check_text}>
+                  <CheckIcon className={styles.check_icon} />
                     <p>Expert Medical Team</p>
                 </div>
                 <div className={styles.check_text}>
+                <CheckIcon className={styles.check_icon} />
                     <p>State-of-the-Art Facilities</p>
                 </div>
                 <div className={styles.check_text}>
+                <CheckIcon className={styles.check_icon} />
                     <p>Comprehensive Specialty Care</p>
                 </div>
                 <div className={styles.check_text}>
+                <CheckIcon className={styles.check_icon} />
                     <p>Patient-Centered Approach</p>
                 </div>
             </div>

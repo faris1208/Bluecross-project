@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../footer/styles.module.scss";
-import woman from "../../../../public/assets/images/diagnostics.jpg";
+import woman from "../../../../public/assets/images/woman.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 

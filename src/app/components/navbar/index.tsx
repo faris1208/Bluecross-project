@@ -4,10 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../navbar/styles.module.scss";
 import logo from "../../../../public/assets/images/hospital-logo.png";
-// import black from "../../../../public/assets/images/pinto_black_logo.svg";
-import menu from "../../../../public/assets/images/child.jpeg";
-import exit from "../../../../public/assets/images/surgery.jpg";
-// import { CartIcon, SearchIcon } from "../icons/icons";
+import { CloseIcon, Hamburger } from "../icon.tsx";
 
 interface NavLink {
   path: string;
@@ -105,12 +102,13 @@ const NavBar: React.FC<NavBarProps> = ({ admin = false }) => {
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
-          <Image
+          {/* <Image
             src={isMobileMenuOpen ? exit : isScrolled ? menu : menu}
             alt="Menu"
             width={25}
             height={25}
-          />
+          /> */}
+          <Hamburger className={styles.hamburger} />
         </button>
 
         <div
@@ -123,7 +121,8 @@ const NavBar: React.FC<NavBarProps> = ({ admin = false }) => {
             onClick={toggleMobileMenu}
             aria-label="Close menu"
           >
-            <Image src={exit} alt="Close menu" width={30} height={30} />
+            {/* <Image src={exit} alt="Close menu" width={30} height={30} /> */}
+            <CloseIcon className={styles.hamburger}  />
           </button>
           
           <ul>
