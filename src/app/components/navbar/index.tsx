@@ -89,7 +89,7 @@ const NavBar: React.FC<NavBarProps> = ({ admin = false }) => {
             ))}
           </ul>
           <div className={styles.btn}>
-            <Link href={"/conatct"}>
+            <Link href={"/contact"}>
             <button>Get Started</button>
             </Link>
           </div>

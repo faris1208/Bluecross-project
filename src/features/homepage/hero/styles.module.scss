@@ -9,10 +9,11 @@
 
   .hero_wrapper {
     display: flex;
+    width: 100%;
 
     .container {
       width: 50%;
-      height: 100vh;
+      height: 650px;
     }
 
     .background {
@@ -21,7 +22,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 50%;
-      height: 100vh;
+      height: 650px;
       position: relative;
 
       .overlay {
@@ -79,6 +80,7 @@
         font-family: WorkSemi;
         color: #313131;
         margin-bottom: 16px;
+        width: 90%;
       }
 
       .hero_btn{
@@ -111,7 +113,7 @@
         .btn_two{
             padding: 15px 30px;
             border-radius: 40px;
-            background-color: #fff;
+            background-color: transparent;
             border: 2px solid #1c7578;
             color: #1c7578;
             cursor: pointer;
@@ -139,6 +141,7 @@
     transform: translate(-50%, -50%);
     .location_box{
         display: flex;
+        justify-content: space-between;
         margin: 0 auto;
         gap: 20px;
         width: 90%;
@@ -150,7 +153,7 @@
             min-height: 140px;
             border-radius: 20px;
             padding: 5px 15px;
-            min-width: 390px;
+            width: 100%;
             background-color: #fff;
             box-shadow: 0px 2px 6.1px 2px #0000000D;
 
@@ -159,8 +162,8 @@
               justify-content: center;
               align-items: center;
               background-color: #1c7578;
-              height: 60px;
-              width: 60px;
+              height: 50px;
+              width: 50px;
               border-radius: 8px;
               
             }
@@ -188,6 +191,7 @@
                     font-family: Work;
                     font-weight: normal;
                     margin-bottom: 5px;
+                    width: 90%;
                 }
             }
         }
@@ -205,10 +209,12 @@
       
         .hero_wrapper {
           display: flex;
+          width: 100%;
       
           .container {
-            width: 50%;
+            width: 100%;
             height: 500px;
+            // display: none;
           }
       
           .background {
@@ -243,7 +249,7 @@
       
         .hero_box {
           position: absolute;
-          top: 35%;
+          top: 32%;
           width: 100%;
           
           // background: #F4F0EC;
@@ -265,7 +271,7 @@
               color: #3d3d3d;
               font-family: Work;
               font-weight: normal;
-              margin-bottom: 16px;
+              margin-bottom: 10px;
               text-align: center;
               line-height: 25px;
             }
@@ -308,7 +314,7 @@
                 width: 100%;
                   padding: 12px 30px;
                   border-radius: 40px;
-                  background-color: #fff;
+                  background-color: transparent;
                   border: 2px solid #1c7578;
                   color: #1c7578;
                   cursor: pointer;
@@ -407,7 +413,7 @@
                       gap: 15px;
                       min-height: 120px;
                       border-radius: 20px;
-                      padding: 8px 15px;
+                      padding: 15px 15px;
                       max-width: 450px;
                       background-color: #fff;
                       box-shadow: 0px 2px 6.1px 2px #0000000D;
@@ -417,15 +423,15 @@
                         justify-content: center;
                         align-items: center;
                         background-color: #1c7578;
-                        height: 50px;
-                        width: 50px;
+                        height: 40px;
+                        width: 40px;
                         border-radius: 8px;
                         
                       }
               
                       .locate_img{
-                          width: 25px;
-                          height: 25px;
+                          width: 20px;
+                          height: 20px;
                           fill: #fff;
                       }
               
@@ -433,7 +439,7 @@
                       .location_text{
               
                           h3{
-                              font-size: 24px;
+                              font-size: 19px;
                               color: #1c7578;
                               font-family: WorkBold;
                               font-weight: normal;
@@ -446,6 +452,7 @@
                               font-family: Work;
                               font-weight: normal;
                               margin-bottom: 5px;
+                              line-height: 25px;
                           }
                       }
                   }

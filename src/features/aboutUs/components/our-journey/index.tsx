@@ -3,10 +3,12 @@ import styles from "../our-journey/styles.module.scss";
 import dia from "../../../../../public/assets/images/orthopedic.jpg"
 import surgery from "../../../../../public/assets/images/surgery.jpg"
 import Image from "next/image";
+import AboutWhyChooseUs from "../about-whychooseus";
 
 export default function OurJourney() {
   return (
     <div className={styles.wrapper}>
+      <AboutWhyChooseUs />
       <div className={styles.wrapper_wrapper}>
         <div className={styles.container}>
           <div className={styles.services}>

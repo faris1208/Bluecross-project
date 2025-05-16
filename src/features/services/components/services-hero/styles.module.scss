@@ -92,8 +92,9 @@
                 margin-top: 100px;
     
                 .review_box {
-                    width: 90%;
+                    width: 100%;
                     margin: 0 auto;
+                    padding: 0px 20px;
                 
                     p {
                       span {
@@ -114,12 +115,13 @@
                     }
                 
                     h2 {
-                      font-size: 38px;
+                      font-size: 28px;
                       font-family: WorkSemi;
                       color: #313131;
-                      line-height: 40px;
+                      line-height: 35px;
                       margin-bottom: 20px;
                       text-align: center;
+                      border: 2px solid red;
                     }
                   }
             }

@@ -33,6 +33,7 @@ export default function AboutHero() {
             <div className={styles.overlay}></div>
           </div>
         </div>
+        
       </div>
     </div>
   );

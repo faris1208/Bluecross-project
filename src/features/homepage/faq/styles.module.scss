@@ -106,11 +106,10 @@
 
   @include responsive("mobile"){
 
-    @import "../../../styles/index.scss";
 
 .wrapper{
     background-color: #F4F0EC;
-    padding: 70px 0px;
+    padding: 50px 0px;
 
     .wrapper_wrapper{
         width: 100%;
