@@ -29,7 +29,9 @@ export default function Footer() {
                 Connect with us learn more about our services and how we can help you achieve your health goals.
               </p>
               <div className={styles.btn}>
+                <Link href={"/contact"}>
               <button>Get Started</button>
+              </Link>
             </div>
             </div>
           </div>

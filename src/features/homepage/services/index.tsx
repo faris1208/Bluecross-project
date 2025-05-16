@@ -3,6 +3,7 @@ import styles from "../services/styles.module.scss";
 import { sales } from "@/app/components/data";
 import Image from "next/image";
 import WhyChooseUs from "../whychooseus";
+import Link from "next/link";
 
 export default function HomepageServices() {
   return (
@@ -36,7 +37,9 @@ export default function HomepageServices() {
                   <h2>{sale.name}</h2>
                   <p className={styles.description}>{sale.description}</p>
                   <div className={styles.btn}>
+                    <Link href={"/services"}>
                     <button>{sale.amount}</button>
+                    </Link>
                   </div>
                 </div>
               </div>

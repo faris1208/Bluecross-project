@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../services-whychooseus/styles.module.scss";
 import emergency from "../../../../../public/assets/images/checkup.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServicesWhyChooseUs() {
   return (
@@ -23,21 +24,23 @@ export default function ServicesWhyChooseUs() {
               plans tailored for each patient.
             </p>
             <div className={styles.check}>
-                <div className={styles.check_text}>
-                    <p>Expert Medical Team</p>
-                </div>
-                <div className={styles.check_text}>
-                    <p>State-of-the-Art Facilities</p>
-                </div>
-                <div className={styles.check_text}>
-                    <p>Comprehensive Specialty Care</p>
-                </div>
-                <div className={styles.check_text}>
-                    <p>Patient-Centered Approach</p>
-                </div>
+              <div className={styles.check_text}>
+                <p>Expert Medical Team</p>
+              </div>
+              <div className={styles.check_text}>
+                <p>State-of-the-Art Facilities</p>
+              </div>
+              <div className={styles.check_text}>
+                <p>Comprehensive Specialty Care</p>
+              </div>
+              <div className={styles.check_text}>
+                <p>Patient-Centered Approach</p>
+              </div>
             </div>
             <div className={styles.btn}>
+              <Link href={"/contact"}>
                 <button>Get Started</button>
+              </Link>
             </div>
           </div>
         </div>

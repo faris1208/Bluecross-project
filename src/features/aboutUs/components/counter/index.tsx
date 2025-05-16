@@ -49,7 +49,7 @@ const StatsCounter = () => {
     });
 
     return () => animations.forEach((timer) => clearInterval(timer));
-  }, [targetValues]);
+  }, []);
 
   return (
     <div className={styles.wrapper}>

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../about-whychooseus/styles.module.scss";
 import emergency from "../../../../../public/assets/images/child.jpeg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutWhyChooseUs() {
   return (
@@ -37,7 +38,9 @@ export default function AboutWhyChooseUs() {
                 </div>
             </div>
             <div className={styles.btn}>
+              <Link href={"/contact"}>
                 <button>Get Started</button>
+                </Link>
             </div>
           </div>
         </div>

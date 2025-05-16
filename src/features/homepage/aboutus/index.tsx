@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../aboutus/styles.module.scss";
+import Link from "next/link";
 
 export default function HomepageAboutUs() {
   return (
@@ -22,7 +23,9 @@ export default function HomepageAboutUs() {
           </p>
         </div>
         <div className={styles.btn_container}>
+          <Link href={"/about-us"}>
             <button>Read More</button>
+            </Link>
           </div>
       </div>
     </div>

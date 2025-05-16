@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../hero/styles.module.scss";
 import { LocationIcon } from "@/app/components/icon.tsx";
+import Link from "next/link";
 
 export default function HeroHomepage() {
   return (
@@ -23,8 +24,12 @@ export default function HeroHomepage() {
             all our patients.
           </p>
           <div className={styles.hero_btn}>
+            <Link href={"/contact"}>
             <button className={styles.btn_one}>Get Started</button>
+            </Link>
+            <Link href={"/contact"}>
             <button className={styles.btn_two}>+2349096529942</button>
+            </Link>
           </div>
         </div>
       </div>
